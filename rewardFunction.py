@@ -32,7 +32,7 @@ def reward(action,row,results):
     reward = 1
     for multi in action:
         success = True
-        if multi[3]==0:
+        if multi[len(action)]==0:
             continue
         for i in range(len(action)):
             if multi[i]==2:
